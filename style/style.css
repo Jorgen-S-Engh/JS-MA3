@@ -1,0 +1,47 @@
+h1 {
+  color: gray;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.items {
+  margin: 20px;
+  background-color: navy;
+  color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+
+  width: 600px;
+  filter: drop-shadow(5px 5px 5px gray);
+}
+
+.loader {
+  margin: 50px;
+  text-align: center;
+  font-size: 3rem;
+  animation: in-and-out 3s infinite;
+}
+
+@keyframes in-and-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
